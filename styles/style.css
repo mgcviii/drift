@@ -1,55 +1,3 @@
-.logo {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 0.2rem;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffffff;
-
-}
-
-li {
-  font-family: "HelveticaNeue-Thin";
-  display: inline-flex;
-  align-items: center;
-
-}
-
-li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 1rem 1rem;
-  text-decoration: none;
-
-}
-
-.search {
-  border-radius: 0.9375rem;
-  border: 1px solid var(--white-black-black, #0c0c0c);
-  background: var(--white-black-white, #faf8f8);
-  width: 12.6875rem;
-  height: 1.875rem;
- 
-  
-}
-
-.search img{
-  padding-top: 0.4rem;
-  padding-left: 0.3rem;
-  padding-bottom:0.3rem ;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  color: #ceef30;
-}
-
 @font-face {
     font-family: "HelveticaNeue-Thin";
     src: url("https://db.onlinewebfonts.com/t/899514ebd390e894ad403011515cde6f.eot");
@@ -118,3 +66,61 @@ li a:hover {
 /* DESKTOP */
 /* ALL STYLING IN DESKTOP SHOULD BE HERE!!! */
 
+@media screen and (min-width: 768px) {
+    
+
+.logo {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  
+  }
+  
+  li {
+    font-family: "HelveticaNeue-Thin";
+    display: inline-flex;
+    align-items: center;
+  
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+  
+  }
+  
+  .search {
+    border-radius: 0.9375rem;
+    border: 1px solid var(--white-black-black, #0c0c0c);
+    background: var(--white-black-white, #faf8f8);
+    width: 12.6875rem;
+    height: 1.875rem;
+   
+    
+  }
+  
+  .search img{
+    padding-top: 0.4rem;
+    padding-left: 0.3rem;
+    padding-bottom:0.3rem ;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: #ceef30;
+  }
+ 
+ 
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END OF BREAK POINAT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+}
