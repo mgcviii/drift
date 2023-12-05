@@ -1,0 +1,81 @@
+.banner {
+  overflow: hidden;
+  width: max-content;
+  white-space: nowrap;
+
+  height: 11rem;
+  color: #fff;
+  top: 50%;
+  left: 0;
+  line-height: 100px;
+  border: 1px solid var(--Title-Color, #000);
+  gap: 0.4375rem;
+  background: #fff;
+  /* Adjust duration and timing function as needed */
+}
+
+/*keyframe animations*/
+
+.banner img {
+  height: 10rem;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.banner-container {
+  width: 100%;
+  position: relative;
+}
+
+.first {
+  -webkit-animation: bannermove 10s linear infinite;
+  -moz-animation: bannermove 10s linear infinite;
+  -ms-animation: bannermove 10s linear infinite;
+  -o-animation: bannermove 10s linear infinite;
+  animation: bannermove 10s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+}
+
+@keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+}
+
+@keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+}
+
+@-ms-keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+}
+
+@-o-keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+}

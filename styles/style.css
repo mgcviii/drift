@@ -51,3 +51,14 @@
 
 /* THIS IS THE BOLD FONT */
 /* font-family: "Helvetica Neue LT Pro 75 Bold"; */
+
+
+:root {
+
+    /* FONTS */
+
+    --bold: "Helvetica Neue LT Pro 75 Bold";
+    --medium: "Helvetica Neue 65 Medium";
+    --regular: "Helvetica Neue Regular";
+    --light: "HelveticaNeue-Thin";
+}
