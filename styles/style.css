@@ -62,3 +62,23 @@
     --regular: "Helvetica Neue Regular";
     --light: "HelveticaNeue-Thin";
 }
+
+p {
+    font-size: 5rem;
+}
+
+p#bold {
+    font-family: var(--bold);
+}
+
+p#med {
+    font-family: var(--medium);
+}
+
+p#reg {
+    font-family: var(--regular);
+}
+
+p#thin {
+    font-family: var(--light);
+}
