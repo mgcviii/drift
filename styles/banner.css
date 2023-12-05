@@ -1,9 +1,9 @@
 .banner {
   overflow: hidden;
-  width: max-content;
+  
   white-space: nowrap;
 
-  height: 11rem;
+  height: 4rem;
   color: #fff;
   top: 50%;
   left: 0;
@@ -17,10 +17,10 @@
 /*keyframe animations*/
 
 .banner img {
-  height: 10rem;
+  height: 3rem;
   width: auto;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .banner-container {
   width: 100%;
@@ -28,11 +28,11 @@
 }
 
 .first {
-  -webkit-animation: bannermove 10s linear infinite;
-  -moz-animation: bannermove 10s linear infinite;
-  -ms-animation: bannermove 10s linear infinite;
-  -o-animation: bannermove 10s linear infinite;
-  animation: bannermove 10s linear infinite;
+  -webkit-animation: bannermove 20s linear infinite;
+  -moz-animation: bannermove 20s linear infinite;
+  -ms-animation: bannermove 20s linear infinite;
+  -o-animation: bannermove 20s linear infinite;
+  animation: bannermove 20s linear infinite;
 }
 
 @keyframes bannermove {
