@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "HelveticaNeue-Thin";
+    src: url("https://db.onlinewebfonts.com/t/899514ebd390e894ad403011515cde6f.eot");
+    src: url("https://db.onlinewebfonts.com/t/899514ebd390e894ad403011515cde6f.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/899514ebd390e894ad403011515cde6f.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/899514ebd390e894ad403011515cde6f.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/899514ebd390e894ad403011515cde6f.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/899514ebd390e894ad403011515cde6f.svg#HelveticaNeue-Thin")format("svg");
+}
+
+/* font-family: "HelveticaNeue-Thin"; */
+
+
+@font-face {
+    font-family: "Helvetica Neue Regular";
+    src: url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot");
+    src: url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.svg#Helvetica Neue Regular")format("svg");
+}
+
+
+/* THIS IS REGULAR WEIGHT */
+/* font-family: "Helvetica Neue Regular"; */
+
+
+@font-face {
+    font-family: "Helvetica Neue 65 Medium";
+    src: url("https://db.onlinewebfonts.com/t/6c6db39a56fe8e8f19ba47c6a0770a18.eot");
+    src: url("https://db.onlinewebfonts.com/t/6c6db39a56fe8e8f19ba47c6a0770a18.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/6c6db39a56fe8e8f19ba47c6a0770a18.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/6c6db39a56fe8e8f19ba47c6a0770a18.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/6c6db39a56fe8e8f19ba47c6a0770a18.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/6c6db39a56fe8e8f19ba47c6a0770a18.svg#Helvetica Neue 65 Medium")format("svg");
+}
+
+/* THIS IS MEDIUM WEIGHT */
+/* font-family: "Helvetica Neue 65 Medium"; */
+
+@font-face {
+    font-family: "Helvetica Neue LT Pro 75 Bold";
+    src: url("https://db.onlinewebfonts.com/t/9a32923a93758d21bf312cf2f6e643d6.eot");
+    src: url("https://db.onlinewebfonts.com/t/9a32923a93758d21bf312cf2f6e643d6.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/9a32923a93758d21bf312cf2f6e643d6.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/9a32923a93758d21bf312cf2f6e643d6.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/9a32923a93758d21bf312cf2f6e643d6.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/9a32923a93758d21bf312cf2f6e643d6.svg#Helvetica Neue LT Pro 75 Bold")format("svg");
+}
+
+/* THIS IS THE BOLD FONT */
+/* font-family: "Helvetica Neue LT Pro 75 Bold"; */
