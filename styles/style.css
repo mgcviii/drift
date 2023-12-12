@@ -152,16 +152,219 @@
 }
 
 
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+.hidden {
+  visibility: hidden;
+}
+
+header {
+  overflow: hidden;
+}
+
+.logo {
+
+  width: 3.97869rem;
+  height: 1.875rem;
+  flex-shrink: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  justify-content: space-between;
+}
+
+
+div.overlay-mobile {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0.25rem;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#close-button {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--med);
+  font-size: var(--p-fontsize);
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+li {
+  font-family: var(--med);
+  font-size: var(--display_sm);
+
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+
+}
+
+
+#some-icons-container-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+img.some-icon {
+  height: 40px;
+  width: 40px;
+}
+
+#search-burger-icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+span#some-icons-desktop {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button.burger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+button#search-icon-mobile {
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+button>div.line {
+  width: 2.1875rem;
+  height: 0.25rem;
+
+  background-color: var(--white-black-black);
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.mobile-hide {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.search-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  background-color: var(--white-black-black, #0C0C0C);
+  /* START WITH NONE JS SCRIPT INCLUDES THE FLEX */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.25rem;
+  top: 0;
+  left: 0;
+}
+
+#search-overlay-close-button {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--med);
+  font-size: var(--p-fontsize);
+  color: var(--chartreuse-1);
+  cursor: pointer;
+  padding-bottom: 20rem;
+}
+
+input.search-input-overlay {
+  font-family: var(--med);
+  font-size: var(--display_sm);
+  background-color: var(--white-black-black);
+  border: none;
+}
+
+input[type=text].search-input-overlay:focus {
+  font-family: var(--med);
+  font-size: var(--display_sm);
+  background-color: var(--white-black-black);
+  border: none;
+  color: var(--white-black-white);
+  outline: none;
+
+}
 
 
 
 
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DESKTOP <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* ALL STYLING IN DESKTOP SHOULD BE HERE!!! */
 
-@media screen and (min-width: 768px) {
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV DESKTOP ONLY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+
+@media screen and (min-width: 1130px) {
+
+  nav {
+    height: 4.125rem;
+    padding: 0.9375rem 2.5rem;
+    gap: 1.5rem;
+  }
 
   .logo {
     margin-left: 1rem;
@@ -169,19 +372,29 @@
     margin-top: 0.2rem;
   }
 
+  .desktop-hide {
+    visibility: hidden;
+    position: absolute;
+    top: 0%;
+  }
+
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   li {
-    font-family: "HelveticaNeue-Thin";
+    font-family: var(--med);
     display: inline-flex;
     align-items: center;
+    font-size: var(--text_lg);
 
   }
 
@@ -194,27 +407,89 @@
 
   }
 
-  .search {
-    border-radius: 0.9375rem;
-    border: 1px solid var(--white-black-black, #0c0c0c);
-    background: var(--white-black-white, #faf8f8);
-    width: 12.6875rem;
-    height: 1.875rem;
-
-
+  li a:hover {
+    color: var(--blueish-base);
   }
 
-  .search img {
-    padding-top: 0.4rem;
-    padding-left: 0.3rem;
-    padding-bottom: 0.3rem;
+  div.overlay-mobile {
+    position: relative;
+    visibility: visible;
+  }
+
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .search-container input[type=text] {
+    /* padding-left: 30px */
+    border: 1px solid var(--white-black-grey-dark);
+    background-color: var(--white-black-white);
+    /* margin-top: 8px; */
+    margin-right: 16px;
+    padding: 6px;
+    border-radius: 0.9375rem;
+    font-family: var(--med);
+    min-width: 150px;
+    max-width: 200px
+  }
+
+  .search-container input[type=text]:hover {
+    border: 1px solid var(--white-black-grey-light);
+    background-color: var(--chartreuse-1);
+  }
+
+  .search-container input[type=text]:focus {
+    box-shadow: var(--shadow-focused);
+    border: 1px solid var(--blueish-2);
+    background-color: var(--white-black-white);
+    outline: none;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 20%;
+    left: 8px;
+    /* Adjust the left position as needed */
+    /* transform: translateY(-50%); */
+    width: 1.25rem;
+    /* Adjust the width and height as needed */
+    height: 1.25rem;
   }
 
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    color: #ceef30;
+
+
+  #some-icons-container-mobile {
+    visibility: hidden;
+    position: absolute;
+    top: 0%;
+    left: 0%;
   }
 
 
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END OF BREAK POINT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  body>header>nav>span#some-icons-desktop {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .mobile-hide {
+    visibility: visible;
+
+  }
+
+  .desktop-hide {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END OF BREAK POINT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media screen and (min-width: 768px) {}

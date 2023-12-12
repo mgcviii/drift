@@ -1,30 +1,101 @@
 .banner {
   overflow: hidden;
-  
+
   white-space: nowrap;
 
-  height: 4rem;
+  height: 2.5rem;
   color: #fff;
   top: 50%;
   left: 0;
   line-height: 100px;
   border: 1px solid var(--Title-Color, #000);
+  border-left: 0;
+  border-right: 0;
   gap: 0.4375rem;
   background: #fff;
-  /* Adjust duration and timing function as needed */
+  display: flex;
+  align-items: center;
+
 }
 
-/*keyframe animations*/
-
 .banner img {
-  height: 3rem;
+  height: 2rem;
   width: auto;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+
 .banner-container {
   width: 100%;
   position: relative;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 3.5rem));
+  }
+}
+
+/* Other keyframes for vendor prefixes */
+@-ms-keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 3.5rem));
+  }
+}
+
+@-o-keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 3.5rem));
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .banner {
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    height: 4rem;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    line-height: 100px;
+    border: 1px solid var(--Title-Color, #000);
+    border-left: 0;
+    border-right: 0;
+    gap: 0.4375rem;
+    background: #fff;
+    /* Adjust duration and timing function as needed */
+  }
+
+  /*keyframe animations*/
+
+  .banner img {
+    height: 3rem;
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .banner-container {
+    width: 100%;
+    position: relative;
+  }
+
 }
 
 .first {
@@ -39,6 +110,7 @@
   0% {
     margin-left: 0px;
   }
+
   100% {
     margin-left: -2125px;
   }
@@ -48,6 +120,7 @@
   0% {
     margin-left: 0px;
   }
+
   100% {
     margin-left: -2125px;
   }
@@ -57,6 +130,7 @@
   0% {
     margin-left: 0px;
   }
+
   100% {
     margin-left: -2125px;
   }
@@ -66,6 +140,7 @@
   0% {
     margin-left: 0px;
   }
+
   100% {
     margin-left: -2125px;
   }
@@ -75,6 +150,7 @@
   0% {
     margin-left: 0px;
   }
+
   100% {
     margin-left: -2125px;
   }
