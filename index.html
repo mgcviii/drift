@@ -173,20 +173,44 @@
             const navoverlay = document.getElementById('navoverlay');
             const closeButton = document.getElementById('close-button');
 
-            burgerButton.addEventListener('click', function () {
-                // Check if viewport width is greater than or equal to 1080
-                if (window.innerWidth >= 1080) {
-                    navoverlay.style.visibility = 'visible';
+            // Function to check viewport width and toggle classes
+            function toggleClasses() {
+                const isLargeViewport = window.innerWidth >= 1130;
+
+                // Toggle classes based on the viewport width
+                if (isLargeViewport) {
+                    navoverlay.classList.remove('overlay-mobile');
+                    navoverlay.classList.add('desktop-navmenu');
+                } else {
+                    navoverlay.classList.remove('desktop-navmenu');
+                    navoverlay.classList.add('overlay-mobile');
                 }
+            }
+
+            // Initial class setup when the page loads
+            toggleClasses();
+
+            burgerButton.addEventListener('click', function () {
+                // Toggle the visibility of the overlay
+                navoverlay.classList.toggle('overlay-visible');
+                // Toggle classes based on the viewport width
+                toggleClasses();
             });
 
             closeButton.addEventListener('click', function () {
-                // Check if viewport width is greater than or equal to 1080
-                if (window.innerWidth >= 1080) {
-                    navoverlay.style.visibility = 'hidden';
-                }
+                // Toggle the visibility of the overlay
+                navoverlay.classList.remove('overlay-visible');
+                // Toggle classes based on the viewport width
+                toggleClasses();
+            });
+
+            // Adjust classes on window resize
+            window.addEventListener('resize', function () {
+                // Check and toggle classes based on the viewport width
+                toggleClasses();
             });
         });
+        
     </script>
 
 </body>
