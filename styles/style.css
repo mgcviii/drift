@@ -353,9 +353,75 @@ input[type=text].search-input-overlay:focus {
 
 /* FOOTER */
 
+footer {
+  min-height: 28.625rem;
+  background: var(--Title-Color, #000);
+  display: grid;
+}
 
+#footerimg {
+  width: 5.9375rem;
+}
 
+p#copyright {
+  visibility: hidden;
+}
 
+.footertext {
+  color: var(--white-black-white)
+}
+
+#description {
+  font-family: var(--light);
+}
+
+#info1,
+#info2 {
+  font-family: var(--thin);
+}
+
+#footer-mid,
+#footer-bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer-some-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+}
+
+footer>div>ul {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+footer>div>ul>li>a {
+  font-family: var(--med);
+  color: var(--white-black-white);
+  font-size: var(--text_lg);
+}
+
+#footer-wordmark {
+  width: 6.57144rem;
+}
+
+p#description {
+  padding-bottom: 0.5rem;
+
+}
+
+p#info1 {
+  padding-bottom: 0.25rem;
+}
+
+#footer-top {
+  margin-bottom: -4rem;
+}
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV DESKTOP ONLY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -369,11 +435,7 @@ input[type=text].search-input-overlay:focus {
     justify-content: space-between;
   }
 
-  .logo {
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
-    /* margin-top: 0.2rem; */
-  }
+
 
   .desktop-hide {
     visibility: hidden;
