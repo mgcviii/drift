@@ -562,6 +562,10 @@ p#info1 {
 }
 
 /* buttons styles */
+a {
+  text-decoration: none;
+  text-decoration-line: none;
+}
 
 .button-primary-rounded-small {
   background-color: var(--white-black-black);
@@ -615,6 +619,34 @@ a.text-only-link>div.arrow-container {
   width: 17px;
   height: 14.17px;
 }
+
+.button-primary-sharp-small {
+  background-color: var(--white-black-black);
+  color: var(--white-black-white);
+  /* border-radius: 20px; */
+  box-shadow: var(--button-shadow);
+  padding: 10px 20px;
+  font-size: var(--text_s);
+  border: none;
+  font-family: var(--med);
+  text-align: center;
+}
+
+.button-primary-sharp-small:hover {
+  background: var(--chartreuse-base, #DFFF00);
+  color: var(--title-color);
+  font-family: var(--med);
+  font-size: var(--text_s);
+
+}
+
+.button-primary-sharp-small:focus {
+  color: var(--white-black-white);
+  background-color: var(--white-black-black);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 5px 0px rgba(56, 55, 55, 0.08), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 0px 0px 4px rgba(103, 110, 118, 0.16);
+}
+
+
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV DESKTOP ONLY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 

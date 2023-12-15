@@ -194,6 +194,7 @@ h1#latest-show-title {
 #sign-up-section {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 article#sign-up-text-form {
@@ -224,7 +225,8 @@ article#sign-up-text-form {
 
 
 
-#name,#email {
+#name,
+#email {
     display: flex;
     align-items: center;
     padding: 10px 14px;
@@ -241,11 +243,33 @@ article#sign-up-text-form {
     font-family: var(--thin);
 }
 
-#name,#email:hover {
-    background-color: var(--white-black-white);
+#name:hover,
+#email:hover {
+    background-color: var(--chartreuse-1);
     font-family: var(--thin);
     border-color: var(--white-black-grey-light);
+    color: #000;
 }
+
+#name:focus,
+#email:focus {
+    background-color: var(--white-black-white);
+    font-family: var(--med);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #E1E0FF;
+    border: 1px solid var(--blueish-2, #5C56FF);
+    outline: none;
+}
+
+#name:valid,
+#email:valid {
+    border: 1px solid;
+    border-color: var(--white-black-grey-light);
+}
+
+/* #name:invalid,
+#email:invalid {
+    border: 1px solid var(--error-base);
+} */
 
 
 
