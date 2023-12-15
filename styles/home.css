@@ -1,5 +1,18 @@
 @import url('style.css');
 
+/* section#hero-video, */
+section#info-section,
+section#latest-shows-section,
+section#sing-up-section,
+section#shop-section {
+    margin-bottom: 5vw;
+}
+
+section#latest-shows-section {
+    /* margin-top: 5vw; */
+    padding-top: 3vw;
+}
+
 section#hero-video {
     /* width: 100%; */
     aspect-ratio: 16 / 9;
@@ -169,7 +182,7 @@ h1#latest-show-title {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 1%;
-    row-gap: 2vh;
+    row-gap: 2rem;
 }
 
 /* .flex-item {
@@ -197,7 +210,7 @@ h1#latest-show-title {
 
 #cuteimg {
     /* height: 5%; */
-    width: 90%;
+    width: 100%;
     max-width: 424px;
 }
 
@@ -282,6 +295,158 @@ article#sign-up-text-form {
     border: 1px solid var(--error-base);
 } */
 
+/* '***************************SHOP************************************************************ */
+
+section#shop-section {
+    background-image: url(/assets/dots-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 291px;
+    height: 454px;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.product-card .frame {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-card .heartsshirt {
+    position: relative;
+    width: 291px;
+    height: 292px;
+}
+
+.product-card .div {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-card .text-wrapper {
+    position: relative;
+    width: 291px;
+    height: 19px;
+    margin-top: -1px;
+    font-family: "Helvetica Neue-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.product-card .text-wrapper-2 {
+    position: relative;
+    width: 75px;
+    height: 18px;
+    font-family: "Helvetica Neue-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.product-card .frame-2 {
+    display: flex;
+    width: 291px;
+    gap: 13px;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.product-card .dropdown-base {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 0px 12px 0px 9px;
+    position: relative;
+    background-color: #ededed;
+}
+
+.product-card .text {
+    position: relative;
+    width: 63px;
+    height: 18px;
+}
+
+.product-card .text-wrapper-3 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-family: var(--XS-light-font-family);
+    font-weight: var(--XS-light-font-weight);
+    color: var(--color-palette-white-black-black);
+    font-size: var(--XS-light-font-size);
+    letter-spacing: var(--XS-light-letter-spacing);
+    line-height: var(--XS-light-line-height);
+    white-space: nowrap;
+    font-style: var(--XS-light-font-style);
+}
+
+.product-card .icon {
+    position: relative;
+    width: 7.36px;
+    height: 4.18px;
+    margin-right: -2.68px;
+}
+
+.product-card .button {
+    display: inline-flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 20px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--color-palette-white-black-black);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--button-shadow);
+    all: unset;
+    box-sizing: border-box;
+}
+
+.product-card .BUTTON {
+    position: relative;
+    width: fit-content;
+    margin-top: -11px;
+    margin-bottom: -9px;
+    font-family: var(--text-small-light-font-family);
+    font-weight: var(--text-small-light-font-weight);
+    color: var(--color-palette-white-black-white);
+    font-size: var(--text-small-light-font-size);
+    letter-spacing: var(--text-small-light-letter-spacing);
+    line-height: var(--text-small-light-line-height);
+    white-space: nowrap;
+    font-style: var(--text-small-light-font-style);
+    all: unset;
+    box-sizing: border-box;
+}
 
 
 /* ******************************************************************************************** */
