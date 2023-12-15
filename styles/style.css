@@ -630,6 +630,8 @@ a.text-only-link>div.arrow-container {
   border: none;
   font-family: var(--med);
   text-align: center;
+  min-width: none;
+  min-width: 370px
 }
 
 .button-primary-sharp-small:hover {
@@ -637,7 +639,6 @@ a.text-only-link>div.arrow-container {
   color: var(--title-color);
   font-family: var(--med);
   font-size: var(--text_s);
-
 }
 
 .button-primary-sharp-small:focus {

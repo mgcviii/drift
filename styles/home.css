@@ -186,9 +186,19 @@ h1#latest-show-title {
 
 /* **************************************SIGN UP********************************************** */
 
+
+
+#sign-up-section-wrapper>div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
 #cuteimg {
     /* height: 5%; */
-    width: 100%;
+    width: 90%;
+    max-width: 424px;
 }
 
 #sign-up-section {
@@ -241,6 +251,7 @@ article#sign-up-text-form {
     border-color: var(--white-black-grey-light);
     box-shadow: var(--shadow-small);
     font-family: var(--thin);
+    max-width: 370px
 }
 
 #name:hover,
@@ -275,23 +286,28 @@ article#sign-up-text-form {
 
 /* ******************************************************************************************** */
 
-/* @media screen and (min-width: 375px) {
-    img#gbears {
-        width: 30%;
-        height: auto;
-        left: 5%;
-        top: 81%;
+@media screen and (min-width: 690px) {
+
+    #cuteimg {
+        /* height: 5%; */
+        width: 100%;
+    }
+
+    #sign-up-section {
+        display: grid;
+        grid-column: 1fr;
+        justify-content: center;
+
+    }
+
+    #sign-up-section-wrapper {
+
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 0.75fr 1fr;
+        column-gap: 2.5rem;
     }
 }
-
-@media screen and (min-width: 425px) {
-    img#gbears {
-        max-width: 30%;
-        height: auto;
-        left: 5%;
-        top: 79%;
-    }
-} */
 
 @media screen and (min-width: 768px) {
 
@@ -352,6 +368,23 @@ article#sign-up-text-form {
         max-width: 15%;
         height: auto;
     }
+
+    #sign-up-section {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+
+
+    #sign-up-invi {
+        font-size: var(--display-md);
+    }
+
+    #signupform {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 1130px) {
@@ -401,4 +434,15 @@ article#sign-up-text-form {
         width: 18%;
         height: auto;
     }
+
+    /* SIGN Up SEction */
+    article#sign-up-text-form {
+        display: grid;
+        gap: 1rem;
+        align-items: center;
+    }
+
+
+
+
 }
