@@ -1,0 +1,15 @@
+<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="20" height="16" fill="#9F8080"/>
+<g id="Homepage - 2 light" clip-path="url(#clip0_666_1329)">
+<rect width="1440" height="4891" transform="translate(-773 -2598)" fill="#FCFCFC"/>
+<g id="Button">
+<rect x="-168" y="-17" width="229" height="50" rx="25" stroke="#0C0C0C"/>
+<path id="Vector" d="M11.4167 0.916748L18.5 8.00008M18.5 8.00008L11.4167 15.0834M18.5 8.00008H1.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_666_1329">
+<rect width="1440" height="4891" fill="white" transform="translate(-773 -2598)"/>
+</clipPath>
+</defs>
+</svg>

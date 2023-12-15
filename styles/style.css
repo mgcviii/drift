@@ -151,7 +151,23 @@
 
 
 
+
+
+
+
+
+
+
 }
+
+/* FONTSTYLING */
+
+h1 {
+  font-family: var(--bold);
+  stroke: 1px black;
+}
+
+
 
 
 * {
@@ -328,6 +344,8 @@ button>div.line {
   padding: 0.25rem;
   top: 0;
   left: 0;
+  overflow: hidden;
+  position: fixed;
 }
 
 #search-overlay-close-button {
@@ -347,6 +365,7 @@ input.search-input-overlay {
   font-size: var(--display_sm);
   background-color: var(--white-black-black);
   border: none;
+  width: 65%;
 }
 
 input[type=text].search-input-overlay:focus {
@@ -359,7 +378,116 @@ input[type=text].search-input-overlay:focus {
 
 }
 
-/* FOOTER */
+/* *************************************SHOWS CARD********************************************* */
+
+
+
+.show-card {
+  display: inline-flex;
+  flex-direction: column;
+  height: 345px;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 4px;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-medium);
+}
+
+.show-card:hover {
+  box-shadow: var(--button-shadow);
+}
+
+.image-placeholder {
+  position: relative;
+  width: 333px;
+  height: 187px;
+  object-fit: cover;
+}
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+  width: 333px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.artistname {
+  position: relative;
+  width: 333px;
+  margin-top: -1px;
+  font-family: var(--light);
+  color: #000000;
+  font-size: 22px;
+  letter-spacing: 0;
+
+}
+
+.date-views {
+  position: relative;
+  width: 333px;
+  height: 20px;
+  font-family: var(--light);
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+
+}
+
+.genre-buttons-field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 333px;
+  align-items: flex-start;
+  gap: 5px 5px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.card-genre {
+  display: inline-flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 20px;
+  background-color: var(--white-black-white);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1.5px solid;
+  border-color: var(--white-black-black);
+  position: relative;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+
+.card-genre:hover {
+  background-color: var(--chartreuse-base);
+}
+
+
+
+.text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -11.5px;
+  margin-bottom: -8.5px;
+  font-family: var(--light);
+  text-transform: uppercase;
+  color: var(--white-black-black);
+  font-size: var(--text_s);
+  white-space: nowrap;
+
+}
+
+/*******************************************END SHOWS CARD***************************************/
+
+/******************************************* FOOTER ***********************************************/
 
 footer {
   /* height: 28.625rem; */
@@ -469,8 +597,23 @@ p#info1 {
   color: var(--white-black-white);
 }
 
-a {
-  text-decoration: none;
+a.text-only-link {
+  text-decoration-line: underline;
+  font-size: 1.44rem;
+  font-family: var(--light);
+  color: var(--white-black-black);
+  display: flex;
+  align-items: center;
+  gap: 1.56rem;
+}
+
+a.text-only-link>div.arrow-container {
+  background-image: url(/assets/arrow.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 14.17px;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV DESKTOP ONLY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
