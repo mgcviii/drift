@@ -138,7 +138,7 @@ p#drift-info-text {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    ;
+
 }
 
 .info-pngs {
@@ -170,7 +170,8 @@ img#gbears {
 
 /* **************LASTEST SHOWS SECTION*************** */
 
-h1#latest-show-title {
+h1#latest-show-title,
+h1#shop-header {
     padding-left: 0.5rem;
     font-size: var(--display-md);
     color: var(--Title-Color, #000);
@@ -190,11 +191,11 @@ h1#latest-show-title {
     margin:0.625rem;
 } */
 
-#allshows-button-container {
+.allxx-button-container {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 /* **************************************SIGN UP********************************************** */
@@ -303,20 +304,72 @@ section#shop-section {
     background-size: cover;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    /* overflow: hidden; */
+}
+
+#shop-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+#unicorn {
+    width: 30%;
+    height: 30%;
+    max-width: 205px;
+    max-height: auto;
+}
+
+article#shop-items-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+}
+
+#shop-header div:nth-last-child(-n+2) {
+    visibility: hidden;
+    position: absolute;
+}
+
+h1#shop-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
 }
 
 .product-card {
     display: flex;
     flex-direction: column;
-    width: 291px;
-    height: 454px;
-    align-items: center;
+    width: 31x;
+    height: 100%;
+    align-items: flex-start;
     gap: 20px;
     position: relative;
+    padding: 3px;
+    transition: background-color 0.5s;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.product-card .frame {
-    display: inline-flex;
+/* .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, transparent 50%,  #F5FFACFF 50%);
+    transition: width 0.10s ease-out; 
+} */
+
+
+
+.frame {
+    /* display: inline-flex; */
     flex-direction: column;
     gap: 55px;
     align-items: flex-start;
@@ -324,14 +377,16 @@ section#shop-section {
     flex: 0 0 auto;
 }
 
-.product-card .heartsshirt {
+.product-card .merch-image {
     position: relative;
-    width: 291px;
-    height: 292px;
+    /* width: 291px;
+    height: 292px;*/
+    width: 100%;
 }
 
-.product-card .div {
-    display: inline-flex;
+
+.merch-info {
+    display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
@@ -339,11 +394,11 @@ section#shop-section {
     flex: 0 0 auto;
 }
 
-.product-card .text-wrapper {
+.product-name {
     position: relative;
-    width: 291px;
+    /* width: 291px; */
     height: 19px;
-    margin-top: -1px;
+    /* margin-top: -1px; */
     font-family: "Helvetica Neue-Light", Helvetica;
     font-weight: 300;
     color: #000000;
@@ -353,11 +408,11 @@ section#shop-section {
     white-space: nowrap;
 }
 
-.product-card .text-wrapper-2 {
+.price {
     position: relative;
     width: 75px;
     height: 18px;
-    font-family: "Helvetica Neue-Bold", Helvetica;
+    font-family: var(--bold);
     font-weight: 700;
     color: #000000;
     font-size: 18px;
@@ -375,78 +430,27 @@ section#shop-section {
     flex: 0 0 auto;
 }
 
-.product-card .dropdown-base {
-    display: flex;
-    width: 100px;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    padding: 0px 12px 0px 9px;
-    position: relative;
-    background-color: #ededed;
+select.size-dropdown {
+    padding: 9px;
+    background-color: #EEEEEE;
+    font-family: var(--light);
 }
 
-.product-card .text {
-    position: relative;
-    width: 63px;
-    height: 18px;
+option.t-shirt-size-option:focus {
+    font-family: var(--light);
 }
 
-.product-card .text-wrapper-3 {
-    position: absolute;
-    top: -1px;
-    left: 0;
-    font-family: var(--XS-light-font-family);
-    font-weight: var(--XS-light-font-weight);
-    color: var(--color-palette-white-black-black);
-    font-size: var(--XS-light-font-size);
-    letter-spacing: var(--XS-light-letter-spacing);
-    line-height: var(--XS-light-line-height);
-    white-space: nowrap;
-    font-style: var(--XS-light-font-style);
+/* *************************MAP***************************** */
+
+article#map-placeholder {
+    background-image: url(/assets/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 25vh;
 }
 
-.product-card .icon {
-    position: relative;
-    width: 7.36px;
-    height: 4.18px;
-    margin-right: -2.68px;
-}
-
-.product-card .button {
-    display: inline-flex;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    padding: 15px 20px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: var(--color-palette-white-black-black);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: var(--button-shadow);
-    all: unset;
-    box-sizing: border-box;
-}
-
-.product-card .BUTTON {
-    position: relative;
-    width: fit-content;
-    margin-top: -11px;
-    margin-bottom: -9px;
-    font-family: var(--text-small-light-font-family);
-    font-weight: var(--text-small-light-font-weight);
-    color: var(--color-palette-white-black-white);
-    font-size: var(--text-small-light-font-size);
-    letter-spacing: var(--text-small-light-letter-spacing);
-    line-height: var(--text-small-light-line-height);
-    white-space: nowrap;
-    font-style: var(--text-small-light-font-style);
-    all: unset;
-    box-sizing: border-box;
-}
 
 
 /* ******************************************************************************************** */
@@ -549,6 +553,25 @@ section#shop-section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div#shop-header-container {
+        justify-content: space-around;
+    }
+
+    h1#shop-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        align-items: center;
+        font-size: var(--display_l);
+    }
+
+    #shop-header div:nth-last-child(-n+2) {
+        visibility: visible;
+        position: relative;
     }
 }
 
@@ -607,7 +630,24 @@ section#shop-section {
         align-items: center;
     }
 
+    article#shop-items-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
 
+    #sign-up-description {
+        font-variant: var(--display_xs);
+    }
 
+    /* *************************MAP***************************** */
+
+    article#map-placeholder {
+        background-image: url(/assets/map.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 33vh;
+    }
 
 }

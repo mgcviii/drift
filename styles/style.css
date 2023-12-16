@@ -454,7 +454,8 @@ input[type=text].search-input-overlay:focus {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
+  padding: 15px 20px 12px 20px;
   background-color: var(--white-black-white);
   border-radius: 20px;
   overflow: hidden;
