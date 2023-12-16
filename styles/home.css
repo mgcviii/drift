@@ -13,6 +13,8 @@ section#latest-shows-section {
     padding-top: 3vw;
 }
 
+
+
 section#hero-video {
     /* width: 100%; */
     aspect-ratio: 16 / 9;
@@ -167,6 +169,20 @@ img#gbears {
     max-width: 21%;
     height: auto;
 }
+
+.button-support {
+    padding: 5px 5px;
+    background-color: #dfff00;
+    border: 1px solid;
+    border-color: transparent;
+    position: absolute;
+    right: -52px;
+    top: 118px;
+    font-family: var(--med);
+    font-size: var(--text_s);
+    transform: rotate(90deg);
+}
+
 
 /* **************LASTEST SHOWS SECTION*************** */
 
@@ -457,6 +473,19 @@ article#map-placeholder {
 
 @media screen and (min-width: 690px) {
 
+    .button-support {
+        padding: 5px 5px;
+        background-color: #dfff00;
+        border: 1px solid;
+        border-color: transparent;
+        position: absolute;
+        right: -52px;
+        top: 130px;
+        font-family: var(--med);
+        font-size: var(--text_s);
+        transform: rotate(90deg);
+    }
+
     #cuteimg {
         /* height: 5%; */
         width: 100%;
@@ -576,6 +605,19 @@ article#map-placeholder {
 }
 
 @media screen and (min-width: 1130px) {
+
+    .button-support {
+        padding: 5px 5px;
+        background-color: #dfff00;
+        border: 1px solid;
+        border-color: transparent;
+        position: absolute;
+        right: -85px;
+        top: 203px;
+        font-family: var(--med);
+        font-size: 1.375rem;
+        transform: rotate(90deg);
+    }
 
     #info-section {
         position: relative;

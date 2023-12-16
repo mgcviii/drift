@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Explore</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img class="logo" src="assets/logo.png" alt="drift radio logo"></a>
+            <div id="navoverlay" class="overlay-mobile">
+
+                <ul>
+                    <li id="close-button"><button id="close-button" class="desktop-hide">CLOSE</button></li>
+                    <li class="star-logo desktop-hide">
+                        <a href="#" aria-label="home"><img id="star-logo-image" src="assets/drift-star-logo.svg" alt="">
+                        </a>
+                    </li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">EXPLORE</a></li>
+                    <li><a href="#">ARTISTS</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">BOOKINGS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li class="">
+                        <span id="some-icons-container-mobile">
+                            <a href="https://www.instagram.com/drift.radio/" target="_blank">
+                                <img class="some-icon" src="assets/instagram-icon.svg" alt="drift instagram">
+                            </a>
+                            <a href="https://www.youtube.com/@Drift-Radio" target="_blank">
+                                <img class="some-icon" src="assets/youtube-icon.svg" alt="drift instagram">
+                            </a>
+                            <a href="https://soundcloud.com/drift-radio" target="_blank">
+                                <img class="some-icon" src="assets/soundcloud-icon.svg" alt="drift instagram">
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-container mobile-hide">
+                <img class="search-icon" src="assets/Search.svg" alt="Search Icon">
+                <input type="text" class="search-input" placeholder="" aria-label="Search" aria-hidden="true"
+                    id="searchInput">
+            </div>
+            <span id="some-icons-desktop">
+                <a href="https://www.instagram.com/drift.radio/" target="_blank">
+                    <img class="some-icon" src="assets/instagram-icon.svg" alt="drift instagram">
+                </a>
+                <a href="https://www.youtube.com/@Drift-Radio" target="_blank">
+                    <img class="some-icon" src="assets/youtube-icon.svg" alt="drift instagram">
+                </a>
+                <a href="https://soundcloud.com/drift-radio" target="_blank">
+                    <img class="some-icon" src="assets/soundcloud-icon.svg" alt="drift instagram">
+                </a>
+            </span>
+            <div id="search-burger-icons-container" class="desktop-hide">
+                <button aria-label="open search" id="search-icon-mobile"><img class="search-icon"
+                        src="/assets/Search.svg" alt="">
+                </button>
+                <button aria-label="open-navigation" id="burger-button" class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+            </div>
+            <span id="search-overlay" class="search-overlay desktop-hide">
+                <button id="search-overlay-close-button" class="desktop-hide">CLOSE</button>
+                <input type="text" class="search-input-overlay" placeholder="Looking for?👀" aria-label="Search"
+                    aria-hidden="true" id="searchInputmobile">
+            </span>
+
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <h1>EXPLORE</h1>
+            <article id="genre-filters-container">
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <div id="footer-top">
+            <img id="footerimg" src="/assets/drift-star-logo-footer.svg" alt="">
+            <p class="footertext" id="copyright">© 2024 Drift Radio</p>
+        </div>
+        <div id="footer-mid">
+            <span id="footer-some-icons">
+                <a href="https://www.instagram.com/drift.radio/" target="_blank">
+                    <img class="some-icon" src="assets/ig-icon-white.svg" alt="drift instagram">
+                </a>
+                <a href="https://www.youtube.com/@Drift-Radio" target="_blank">
+                    <img class="some-icon" src="assets/youtube-icon-white.svg" alt="drift instagram">
+                </a>
+                <a href="https://soundcloud.com/drift-radio" target="_blank">
+                    <img class="some-icon" src="assets/soundcloud-icon-white.svg" alt="drift instagram">
+                </a>
+            </span>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Bookings</a></li>
+            </ul>
+        </div>
+        <div id="footer-bot">
+            <img id="footer-wordmark" src="assets/logotype-white.png" alt="">
+            <p class="footertext" id="description">Radio bar and online radio station
+            </p>
+            <p class="footertext" id="info1">Open every Thursday, 14:00-22:00</p>
+            <p class="footertext" id="info2">Located at Øen, Mimersgade 2200 KBH</p>
+        </div>
+    </footer>
+    <!-- Search SCRIPT to delete written text after pressing enter desktop -->
+    <script>
+        document.getElementById('searchInput').addEventListener('focus', function () {
+            document.querySelector('.search-icon').style.display = 'none';
+        });
+
+        document.getElementById('searchInput').addEventListener('blur', function () {
+            document.querySelector('.search-icon').style.display = 'block';
+        });
+
+        searchInput.addEventListener('keydown', function (event) {
+            // Check if the pressed key is the "Enter" key (keyCode 13)
+            if (event.keyCode === 13) {
+                // Clear the input value
+                searchInput.value = '';
+            }
+        });
+    </script>
+    <!-- SEARCH OVERLAY SCRIPT FOR MOBILE -->
+    <script>
+        searchInputmobile.addEventListener('keydown', function (event) {
+            // Check if the pressed key is the "Enter" key (keyCode 13)
+            if (event.keyCode === 13) {
+                // Clear the input value
+                searchInputmobile.value = '';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('search-icon-mobile').addEventListener('click', function () {
+            document.getElementById('search-overlay').style.display = 'flex';
+            setBodyOverflowHidden();
+        });
+
+        document.getElementById('search-overlay-close-button').addEventListener('click', function () {
+            document.getElementById('search-overlay').style.display = 'none';
+            setBodyOverflowVisible();
+        });
+
+        function setBodyOverflowHidden() {
+            document.body.style.overflow = 'hidden';
+        }
+
+        function setBodyOverflowVisible() {
+            document.body.style.overflow = 'visible';
+        }
+    </script>
+    <!-- navigation overlay script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerButton = document.getElementById('burger-button');
+            const navoverlay = document.getElementById('navoverlay');
+            const closeButton = document.getElementById('close-button');
+
+            // Function to check viewport width and toggle classes
+            function toggleClasses() {
+                const isLargeViewport = window.innerWidth >= 1130;
+
+                // Toggle classes based on the viewport width
+                if (isLargeViewport) {
+                    navoverlay.classList.remove('overlay-mobile');
+                    navoverlay.classList.add('desktop-navmenu');
+                } else {
+                    navoverlay.classList.remove('desktop-navmenu');
+                    navoverlay.classList.add('overlay-mobile');
+                }
+            }
+
+            // Function to toggle body overflow based on overlay visibility
+            function toggleBodyOverflow() {
+                const isOverlayVisible = navoverlay.classList.contains('overlay-visible');
+                document.body.style.overflow = isOverlayVisible ? 'hidden' : 'auto';
+            }
+
+            // Initial class setup when the page loads
+            toggleClasses();
+
+            burgerButton.addEventListener('click', function () {
+                // Toggle the visibility of the overlay
+                navoverlay.classList.toggle('overlay-visible');
+                // Toggle body overflow
+                toggleBodyOverflow();
+                // Toggle classes based on the viewport width
+                toggleClasses();
+            });
+
+            closeButton.addEventListener('click', function () {
+                // Toggle the visibility of the overlay
+                navoverlay.classList.remove('overlay-visible');
+                // Toggle body overflow
+                toggleBodyOverflow();
+                // Toggle classes based on the viewport width
+                toggleClasses();
+            });
+
+            // Adjust classes on window resize
+            window.addEventListener('resize', function () {
+                // Check and toggle classes based on the viewport width
+                toggleClasses();
+                // Toggle body overflow
+                toggleBodyOverflow();
+            });
+        });
+    </script>
+    
+</body>
+</html>
