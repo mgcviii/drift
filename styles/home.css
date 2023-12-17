@@ -684,7 +684,7 @@ article#map-placeholder {
     /* *************************MAP***************************** */
 
     article#map-placeholder {
-        background-image: url(assets/map.png);
+        background-image: url(../assets/map.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
