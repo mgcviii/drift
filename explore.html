@@ -213,6 +213,9 @@
                     <button data-filter="disco" class="button-genre-mobile">
                         <p class="GENRE">disco</p>
                     </button>
+                    <button data-filter="garage" class="button-genre-mobile">
+                        <p class="GENRE">garage</p>
+                    </button>
                 </div>
 
             </article>
@@ -230,8 +233,8 @@
                         <button class="card-genre" data-filter="electronica">
                             <p class="text-wrapper-2"> electronica </p>
                         </button>
-                        <button class="card-genre ">
-                            <p class="text-wrapper-2" data-filter="garage"> garage </p>
+                        <button class="card-genre " data-filter="garage">
+                            <p class="text-wrapper-2"> garage </p>
                         </button>
                     </div>
                 </article>
@@ -259,8 +262,8 @@
                         <h2 class="artistname">Lucid</h2>
                         <p class="date-views">Nov 23, 2023 / 240 views</p>
                     </div>
-                    <div class="genre-buttons-field" data-filter="techno">
-                        <button class="card-genre ">
+                    <div class="genre-buttons-field">
+                        <button class="card-genre " data-filter="techno">
                             <p class="text-wrapper-2">techno</p>
                         </button>
                         <button class="card-genre " data-filter="electro">
@@ -278,10 +281,10 @@
                         <p class="date-views">Nov 23, 2023 / 240 views</p>
                     </div>
                     <div class="genre-buttons-field">
-                        <button class="card-genre " data-filter="electronic">
+                        <button class="card-genre " data-filter="house">
                             <p class="text-wrapper-2"> house </p>
                         </button>
-                        <button class="card-genre " data-filter="house">
+                        <button class="card-genre " data-filter="electronic">
                             <p class="text-wrapper-2"> electronic </p>
                         </button>
                     </div>
@@ -437,7 +440,7 @@
                         <button class="card-genre " data-filter="techno">
                             <p class="text-wrapper-2"> techno </p>
                         </button>
-                        <button class="card-genre " data-filter="">
+                        <button class="card-genre " data-filter="trance">
                             <p class="text-wrapper-2"> trance </p>
                         </button>
                         <button class="card-genre " data-filter="eclectro">
@@ -581,7 +584,7 @@
 
             </article>
         </section>
-        <!-- Interview, funky, liveact,soul, industrial, drum&bass, italo, dub, belearic, world , reggae, uk bass, acoustic  -->
+
     </main>
     <footer>
         <div id="footer-top">
@@ -614,7 +617,7 @@
             <p class="footertext" id="info2">Located at Øen, Mimersgade 2200 KBH</p>
         </div>
     </footer>
-
+    <!-- HIDE OR SHOW FILTERS -->
     <script>
         const filterToggler = document.getElementById("filter-toggler");
         const genreFilters = document.getElementById("genre-filters");
@@ -632,245 +635,122 @@
             }
         });
     </script>
-
-    <script>
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     const buttons = document.querySelectorAll('.button-genre-mobile');
-        //     const cardGenreButtons = document.querySelectorAll('.card-genre');
-        //     const items = document.querySelectorAll('.show-card');
-        //     const noItemsCard = document.querySelector('#no-items-card');
-
-        //     // Add the 'hide' class to noItemsCard by default
-        //     noItemsCard.classList.add('hide');
-
-        //     function filterItems(filterValue) {
-        //         console.log('Filtering items for:', filterValue);
-        //         let itemsToShow = [];
-
-        //         items.forEach(item => {
-        //             const itemFilters = item.getAttribute('data-filter').split(' ');
-        //             if (filterValue === 'all' || itemFilters.includes(filterValue)) {
-        //                 item.classList.remove('hide');
-        //                 itemsToShow.push(item);
-        //             } else {
-        //                 item.classList.add('hide');
-        //             }
-        //         });
-
-        //         // Show or hide the no-items card based on the number of items to display
-        //         if (itemsToShow.length === 0) {
-        //             noItemsCard.classList.remove('hide');
-        //         } else {
-        //             noItemsCard.classList.add('hide');
-        //         }
-
-        //         console.log('Filtered items:', itemsToShow.length);
-        //     }
-
-        //     function handleButtonClick(button, filterValue) {
-        //         const isActive = button.classList.contains('active');
-
-        //         // If the button is already active, reset filters and remove the selected class
-        //         if (isActive) {
-        //             buttons.forEach(b => {
-        //                 b.classList.remove('active', 'selected');
-        //             });
-
-        //             cardGenreButtons.forEach(cardButton => {
-        //                 cardButton.classList.remove('active');
-        //             });
-
-        //             items.forEach(item => {
-        //                 item.classList.remove('hide');
-        //             });
-
-        //             noItemsCard.classList.add('hide');
-        //             console.log('Filters reset');
-        //             return; // Skip further processing
-        //         }
-
-        //         // Remove active and selected classes from all buttons
-        //         buttons.forEach(b => {
-        //             b.classList.remove('active', 'selected');
-        //         });
-
-        //         cardGenreButtons.forEach(cardButton => {
-        //             cardButton.classList.remove('active');
-        //         });
-
-        //         // If the button is not a .card-genre, add active and selected classes
-        //         if (!button.classList.contains('card-genre')) {
-        //             button.classList.add('active', 'selected');
-        //         }
-
-        //         filterItems(filterValue);
-        //         console.log('Filters applied:', filterValue);
-        //     }
-
-        //     // Function to get the genre from the URL query parameter
-        //     function getGenreFromURL() {
-        //         const urlParams = new URLSearchParams(window.location.search);
-        //         return urlParams.get('genre');
-        //     }
-
-        //     // Get the genre from the URL and apply filtering
-        //     const genreFromURL = getGenreFromURL();
-        //     if (genreFromURL) {
-        //         // Find the corresponding button for the genre
-        //         const correspondingButton = Array.from(buttons).find(
-        //             button => button.getAttribute('data-filter') === genreFromURL
-        //         );
-
-        //         if (correspondingButton) {
-        //             // Trigger the click event for the corresponding button
-        //             correspondingButton.click();
-        //             console.log('Clicked on corresponding button:', genreFromURL);
-        //         }
-        //     }
-
-        //     // Event listeners for genre buttons
-        //     buttons.forEach(button => {
-        //         button.addEventListener('click', () => {
-        //             const filterValue = button.getAttribute('data-filter');
-        //             handleButtonClick(button, filterValue);
-        //         });
-        //     });
-
-        //     // Event listeners for card genre buttons
-        //     cardGenreButtons.forEach(cardButton => {
-        //         cardButton.addEventListener('click', () => {
-        //             const filterValue = cardButton.getAttribute('data-filter');
-        //             const correspondingButton = Array.from(buttons).find(
-        //                 button => button.getAttribute('data-filter') === filterValue
-        //             );
-
-        //             if (correspondingButton) {
-        //                 handleButtonClick(correspondingButton, filterValue);
-        //             }
-        //         });
-        //     });
-        // });
-    </script>
+    <!-- FILTERING  -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.button-genre-mobile');
-    const cardGenreButtons = document.querySelectorAll('.card-genre');
-    const items = document.querySelectorAll('.show-card');
-    const noItemsCard = document.querySelector('#no-items-card');
+            const buttons = document.querySelectorAll('.button-genre-mobile');
+            const cardGenreButtons = document.querySelectorAll('.card-genre');
+            const items = document.querySelectorAll('.show-card');
+            const noItemsCard = document.querySelector('#no-items-card');
 
-    // Add the 'hide' class to noItemsCard by default
-    noItemsCard.classList.add('hide');
-
-    function filterItems(filterValue) {
-        let itemsToShow = [];
-
-        items.forEach(item => {
-            const itemFilters = item.getAttribute('data-filter').split(' ');
-            if (filterValue === 'all' || itemFilters.includes(filterValue)) {
-                item.classList.remove('hide');
-                itemsToShow.push(item);
-            } else {
-                item.classList.add('hide');
-            }
-        });
-
-        // Show or hide the no-items card based on the number of items to display
-        if (itemsToShow.length === 0) {
-            noItemsCard.classList.remove('hide');
-        } else {
+            //  noItemsCard class=hide by default
             noItemsCard.classList.add('hide');
-        }
 
-        // Add 'active' and 'selected' classes to the corresponding button
-        buttons.forEach(button => {
-            const buttonFilterValue = button.getAttribute('data-filter');
-            if (buttonFilterValue === filterValue) {
-                button.classList.add('active', 'selected');
-            } else {
-                button.classList.remove('active', 'selected');
+            function filterItems(filterValue) {
+                let itemsToShow = [];
+
+                items.forEach(item => {
+                    const itemFilters = item.getAttribute('data-filter').split(' ');
+                    if (filterValue === 'all' || itemFilters.includes(filterValue)) {
+                        item.classList.remove('hide');
+                        itemsToShow.push(item);
+                    } else {
+                        item.classList.add('hide');
+                    }
+                });
+
+                // Show or hide the no-items card based on the number of items to display
+                if (itemsToShow.length === 0) {
+                    noItemsCard.classList.remove('hide');
+                } else {
+                    noItemsCard.classList.add('hide');
+                }
+
+                // Add 'active' and 'selected' classes to the corresponding button
+                buttons.forEach(button => {
+                    const buttonFilterValue = button.getAttribute('data-filter');
+                    if (buttonFilterValue === filterValue) {
+                        button.classList.add('active', 'selected');
+                    } else {
+                        button.classList.remove('active', 'selected');
+                    }
+                });
             }
-        });
-    }
 
-    // Function to get the genre from the URL query parameter
-    function getGenreFromURL() {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get('genre');
-    }
+            // Function to get the genre from the URL query parameter
+            function getGenreFromURL() {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get('genre');
+            }
 
-    // Function to handle button click
-    function handleButtonClick(button, filterValue) {
-        const isActive = button.classList.contains('active');
+            // Function to handle button click
+            function handleButtonClick(button, filterValue) {
+                const isActive = button.classList.contains('active');
 
-        // If the button is already active, reset filters and remove the selected class
-        if (isActive) {
-            buttons.forEach(b => {
-                b.classList.remove('active', 'selected');
+                // If the button is already active, reset filters and remove the selected class
+                if (isActive) {
+                    buttons.forEach(b => {
+                        b.classList.remove('active', 'selected');
+                    });
+
+                    cardGenreButtons.forEach(cardButton => {
+                        cardButton.classList.remove('active');
+                    });
+
+                    items.forEach(item => {
+                        item.classList.remove('hide');
+                    });
+
+                    noItemsCard.classList.add('hide');
+                    return; // Skip further processing
+                }
+
+                // Remove active and selected classes from all buttons
+                buttons.forEach(b => {
+                    b.classList.remove('active', 'selected');
+                });
+
+                cardGenreButtons.forEach(cardButton => {
+                    cardButton.classList.remove('active');
+                });
+
+                // If the button is not a .card-genre, add active and selected classes
+                if (!button.classList.contains('card-genre')) {
+                    button.classList.add('active', 'selected');
+                }
+
+                filterItems(filterValue);
+            }
+
+            // Get the genre from the URL and apply filtering
+            const genreFromURL = getGenreFromURL();
+            if (genreFromURL) {
+                filterItems(genreFromURL);
+            }
+
+            // Event listeners for genre buttons
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filterValue = button.getAttribute('data-filter');
+                    handleButtonClick(button, filterValue);
+                });
             });
 
+            // Event listeners for card genre buttons
             cardGenreButtons.forEach(cardButton => {
-                cardButton.classList.remove('active');
+                cardButton.addEventListener('click', () => {
+                    const filterValue = cardButton.getAttribute('data-filter');
+                    const correspondingButton = Array.from(buttons).find(
+                        button => button.getAttribute('data-filter') === filterValue
+                    );
+
+                    if (correspondingButton) {
+                        handleButtonClick(correspondingButton, filterValue);
+                    }
+                });
             });
-
-            items.forEach(item => {
-                item.classList.remove('hide');
-            });
-
-            noItemsCard.classList.add('hide');
-            return; // Skip further processing
-        }
-
-        // Remove active and selected classes from all buttons
-        buttons.forEach(b => {
-            b.classList.remove('active', 'selected');
         });
-
-        cardGenreButtons.forEach(cardButton => {
-            cardButton.classList.remove('active');
-        });
-
-        // If the button is not a .card-genre, add active and selected classes
-        if (!button.classList.contains('card-genre')) {
-            button.classList.add('active', 'selected');
-        }
-
-        filterItems(filterValue);
-    }
-
-    // Get the genre from the URL and apply filtering
-    const genreFromURL = getGenreFromURL();
-    if (genreFromURL) {
-        filterItems(genreFromURL);
-    }
-
-    // Event listeners for genre buttons
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filterValue = button.getAttribute('data-filter');
-            handleButtonClick(button, filterValue);
-        });
-    });
-
-    // Event listeners for card genre buttons
-    cardGenreButtons.forEach(cardButton => {
-        cardButton.addEventListener('click', () => {
-            const filterValue = cardButton.getAttribute('data-filter');
-            const correspondingButton = Array.from(buttons).find(
-                button => button.getAttribute('data-filter') === filterValue
-            );
-
-            if (correspondingButton) {
-                handleButtonClick(correspondingButton, filterValue);
-            }
-        });
-    });
-});
     </script>
-
-
-
-
-
     <!-- Search SCRIPT to delete written text after pressing enter desktop -->
     <script>
         document.getElementById('searchInput').addEventListener('focus', function () {

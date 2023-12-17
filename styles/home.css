@@ -258,6 +258,7 @@ article#sign-up-text-form {
     flex-direction: column;
     gap: 1rem;
 
+
 }
 
 
@@ -579,7 +580,8 @@ article#map-placeholder {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
+        justify-content: flex-start;
     }
 
     div#shop-header-container {
@@ -665,8 +667,8 @@ article#map-placeholder {
     /* SIGN Up SEction */
     article#sign-up-text-form {
         display: grid;
-        gap: 1rem;
         align-items: center;
+        max-width: 90%;
     }
 
     article#shop-items-container {

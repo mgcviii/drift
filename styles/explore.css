@@ -10,6 +10,7 @@ h1#explore {
     padding-top: 1.5rem;
     /* padding-bottom: 1.5rem; */
     padding-left: 0.5rem;
+    font-size: var(--display-md);
 }
 
 
@@ -108,4 +109,39 @@ article#shows-container {
     font-family: var(--bold);
     text-align: center;
 
+}
+
+
+@media screen and (min-width: 1130px) {
+    .button-genre-mobile {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 3px 20px;
+        position: relative;
+        border-radius: 30px;
+        border: 1px solid;
+        border-color: var(--title-color);
+        background-color: var(--white-black-white);
+        cursor: pointer;
+    }
+
+    .button-genre-mobile .GENRE {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: var(--light);
+        font-weight: 300;
+        color: var(--title-color);
+        font-size: var(--display_xs);
+        letter-spacing: 0;
+        line-height: normal;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .selected {
+        background-color: var(--chartreuse-base);
+    }
 }
