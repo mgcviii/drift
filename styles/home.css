@@ -640,6 +640,11 @@ article#map-placeholder {
         padding-left: 2.5rem;
     }
 
+    span.visually-invisible {
+        visibility: hidden;
+        position: absolute;
+    }
+
 
     div.drift-section-background {
         font-family: var(--bold);
