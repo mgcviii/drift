@@ -640,7 +640,7 @@ article#map-placeholder {
         padding-left: 2.5rem;
     }
 
-    p.drift-section-background {
+    div.drift-section-background {
         font-family: var(--bold);
         font-size: 10vmin;
     }
