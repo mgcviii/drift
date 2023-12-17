@@ -313,7 +313,7 @@ article#sign-up-text-form {
 /* '***************************SHOP************************************************************ */
 
 section#shop-section {
-    background-image: url(/assets/dots-bg.png);
+    background-image: url(../assets/dots-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-left: 0.5rem;
@@ -457,7 +457,7 @@ option.t-shirt-size-option:focus {
 /* *************************MAP***************************** */
 
 article#map-placeholder {
-    background-image: url(/assets/map.png);
+    background-image: url(../assets/map.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -684,7 +684,6 @@ article#map-placeholder {
     /* *************************MAP***************************** */
 
     article#map-placeholder {
-        background-image: url(../assets/map.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
