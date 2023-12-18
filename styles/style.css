@@ -55,50 +55,22 @@
 
 :root {
   /* FONTS */
-
   --bold: "Helvetica Neue LT Pro 75 Bold";
   --med: "Helvetica Neue 65 Medium";
   --light: "Helvetica Neue Light";
   --thin: "HelveticaNeue-Thin";
 
   /* FONT SIZING */
-
   --display_xl: 3.5835rem;
   --display_l: 2.98625rem;
   --display-md: 2.48813rem;
   --display_sm: 2.07375rem;
   --display_xs: 1.72813rem;
-
   --text_xl: 1.44rem;
   --text_lg: 1.2rem;
   --p-fontsize: 1rem;
   --text_s: 0.83rem;
   --text_xs: 0.69rem;
-
-
-  /* lineheight */
-  --lineheight_display_xl: 4.5rem;
-  /* 125.576% */
-  --lineheight_display_l: 3.75rem;
-  /* 125.576% */
-  --lineheight_display_md: 2.75rem;
-  /* 110.525% */
-  --lineheight_display_sm: 2.375rem;
-  /* 114.527% */
-  --lineheight_display_xs: 2rem;
-  /* 115.732% */
-
-  --lineheight_text_xl: 1.875rem;
-  /* 130.208% */
-  --lineheight_text_lg: 1.75rem;
-  /* 145.833% */
-  --lineheight_paragraph: 1.5rem;
-  /* 150% */
-  --lineheight_text_sm: 1.25rem;
-  /* 150.038% */
-  --lineheight_text_xs: 1.125rem;
-  /* 162.016% */
-
 
   /* COLORS */
   --blueish-1: #E1E0FFFF;
@@ -132,7 +104,6 @@
   --white-black-grey-light: #B9B9B9FF;
   --white-black-white: #FAF8F8FF;
 
-
   /* SHADOWS */
   --shadow-XS: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   --shadow-small: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
@@ -143,32 +114,17 @@
   --shadow-3xl: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
   --button-shadow: 1px 3px 5px 0px rgba(16, 24, 40, 0.3);
   --shadow-focused: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(225, 224, 255, 1);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 /* FONTSTYLING */
 
 h1 {
   font-family: var(--bold);
-  stroke: 1px black;
 }
 
-
-
+body {
+  font-size: 16px;
+}
 
 * {
   box-sizing: border-box;
@@ -177,9 +133,6 @@ h1 {
   /* overflow: hidden; */
 }
 
-body {
-  /* overflow: hidden; */
-}
 
 /* HEADER */
 
@@ -207,7 +160,6 @@ nav {
   margin-right: 0.3125rem;
   justify-content: space-between;
 }
-
 
 .overlay-mobile {
   width: 100%;
@@ -293,7 +245,6 @@ button.burger {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-
   background-color: transparent;
   border: none;
   outline: none;
@@ -301,7 +252,6 @@ button.burger {
 
 button#search-icon-mobile {
   cursor: pointer;
-
   background-color: transparent;
   border: none;
   outline: none;
@@ -315,7 +265,6 @@ button#search-icon-mobile {
 button>div.line {
   width: 2.1875rem;
   height: 0.25rem;
-
   background-color: var(--white-black-black);
   margin: 3px 0;
   transition: 0.4s;
@@ -581,13 +530,13 @@ a {
 }
 
 .button-primary-rounded-small:hover {
-  background-color: var(--chartreuse-2, #EDFF61);
+  background-color: var(--chartreuse-2);
   color: var(--white-black-black);
 }
 
 .button-secondary-rounded-small {
-  border: 1px solid var(--white-black-black, #0C0C0C);
-  background: var(--white-black-white, #FAF8F8);
+  border: 1px solid var(--white-black-black);
+  background: var(--white-black-white);
   border-radius: 20px;
   box-shadow: var(--button-shadow);
   padding: 8px 20px 8px 20px;
@@ -598,7 +547,7 @@ a {
 }
 
 .button-secondary-rounded-small:hover {
-  background-color: var(--white-black-black, #0C0C0C);
+  background-color: var(--white-black-black);
   color: var(--white-black-white);
 }
 
@@ -662,14 +611,11 @@ a.text-only-link>div.arrow-container {
     justify-content: space-between;
   }
 
-
-
   .desktop-hide {
     visibility: hidden;
     position: absolute;
     top: 0%;
   }
-
 
   ul {
     list-style-type: none;
@@ -696,7 +642,6 @@ a.text-only-link>div.arrow-container {
     text-align: center;
     padding: 1rem 1rem;
     text-decoration: none;
-
   }
 
   li a:hover {
@@ -742,15 +687,9 @@ a.text-only-link>div.arrow-container {
     position: absolute;
     top: 20%;
     left: 8px;
-    /* Adjust the left position as needed */
-    /* transform: translateY(-50%); */
     width: 1.25rem;
-    /* Adjust the width and height as needed */
     height: 1.25rem;
   }
-
-  /* Change the link color to #111 (black) on hover */
-
 
   #some-icons-container-mobile {
     visibility: hidden;

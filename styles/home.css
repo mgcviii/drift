@@ -26,7 +26,6 @@ iframe#main-vid {
     width: 100%;
     height: 100%;
     margin-bottom: -.5%;
-
 }
 
 aside#topbanner {
@@ -102,6 +101,11 @@ button#play-pause-button {
     height: 45vh;
     /* overflow: hidden; */
     margin-bottom: 5rem;
+}
+
+span.visually-invisible {
+    visibility: hidden;
+    position: absolute;
 }
 
 article#drift-info {
